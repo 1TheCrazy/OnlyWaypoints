@@ -86,7 +86,7 @@ public class ScrollListWidget extends ElementListWidget<ScrollListWidget.Waypoin
         WaypointEntry focused = this.getFocused();
         if (focused != null) {
             int borderColor = 0xFFFFFFFF;
-            int fillColor = ColorHelper.withAlpha(0.4f, 0x000000);
+            int fillColor = ColorHelper.withAlpha(102, 0x000000);
 
             // Draw the vanilla‑style selection box
             Vector2i topRightCorner = focused.getTopLeftCorner();

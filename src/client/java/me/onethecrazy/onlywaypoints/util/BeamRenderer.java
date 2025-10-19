@@ -45,7 +45,7 @@ public class BeamRenderer {
         renderBeamLayer(
                 matrices,
                 vertexConsumers.getBuffer(RenderLayer.getBeaconBeam(textureId, true)),
-                ColorHelper.withAlpha(opacity, color),
+                ColorHelper.withAlpha((int)(255 * opacity), color),
                 yOffset,
                 i,
                 0.0F,

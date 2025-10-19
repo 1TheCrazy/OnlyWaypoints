@@ -219,7 +219,7 @@ public class WaypointManager {
                 sy - margin,
                 sx + (int) xOffset + margin,
                 sy + (int) textHeight + margin,
-                ColorHelper.withAlpha(0.5f, 0x000000)
+                ColorHelper.withAlpha(127, 0x000000)
         );
 
         ctx.drawText(
