@@ -117,7 +117,7 @@ public class WaypointManager {
 
         var playerDimension = client.world.getRegistryKey();
 
-        float delta = ctx.tickCounter().getDynamicDeltaTicks();
+        float delta = ctx.tickCounter().getTickDelta(true);
         unfrozenTime += delta;
 
         VertexConsumerProvider.Immediate consumers = client.getBufferBuilders().getEntityVertexConsumers();
@@ -154,7 +154,7 @@ public class WaypointManager {
         Window window = client.getWindow();
 
         // Construct projection Matrix
-        float tickDelta = tick.getTickProgress(true);
+        float tickDelta = tick.getTickDelta(true);
         double fovDeg = ((GameRendererAccessor) renderer).invokeGetFov(camera, tickDelta, true);
         Matrix4f projMatrix = renderer.getBasicProjectionMatrix((float) fovDeg);
 
